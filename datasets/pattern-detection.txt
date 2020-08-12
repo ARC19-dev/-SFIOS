@@ -11,3 +11,5 @@ pashmam
 pachmam
 
 Fight
+
+test shortcut
