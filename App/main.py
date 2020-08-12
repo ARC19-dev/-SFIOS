@@ -23,11 +23,24 @@ class Window(QWidget):
         self.label_2 = QLabel("password", self)
         self.label_2.move(20, 120)
 
-        self.button = QPushButton('close', self)
+        self.button = QPushButton("submit", self)
         self.button.move(100,150)
-        self.button.clicked.connect(lambda : self.close())
+        self.button.clicked.connect(self.submit)
         self.show()
         
+    def submit(self):
+        self.username = self.line_1.text()
+        self.password = self.line_2.text()
+        try:
+            import redis
+            r = redis.Redis()
+            r.set(self.password, self.username)
+            r.get(self.password)
+            print('successfully :)')
+        except ModuleNotFoundError:
+            print('you most install redis your system !')
+
+
 if __name__ == "__main__":
     import sys
     app = QApplication(sys.argv)
