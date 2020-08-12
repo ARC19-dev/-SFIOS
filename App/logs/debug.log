@@ -28,3 +28,8 @@
 2020-08-10 19:43:30,701-WARNING-root     : This is a warning msg {test.py > <module> > 14}
 2020-08-10 19:43:30,701-ERROR-root     : This is a error msg {test.py > <module> > 15}
 2020-08-10 19:43:30,701-CRITICAL-root     : This is a critical msg {test.py > <module> > 16}
+2020-08-11 13:43:33,481-DEBUG-Test.Core : This is a debug msg {test.py > <module> > 6}
+2020-08-11 13:43:33,483-INFO -Test.Core : This is a info msg {test.py > <module> > 7}
+2020-08-11 13:43:33,483-WARNING-Test.Core : This is a warning msg {test.py > <module> > 8}
+2020-08-11 13:43:33,483-ERROR-Test.Core : This is a error msg {test.py > <module> > 9}
+2020-08-11 13:43:33,483-CRITICAL-Test.Core : This is a critical msg {test.py > <module> > 10}
