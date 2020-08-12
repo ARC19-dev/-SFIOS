@@ -1,0 +1,6 @@
+create my new project
+
+open a repo in git lab
+
+replace the functions in script
+
