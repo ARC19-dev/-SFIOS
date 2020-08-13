@@ -13,3 +13,8 @@ pachmam
 Fight
 
 test shortcut
+
+salam
+
+// comment
+

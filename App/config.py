@@ -1,6 +1,6 @@
-import logging
+import logging, sys, os
 
-""" LOGGING & LOGGERS """
+""" -------------------- LOGGING & LOGGERS -------------------- """
 
 logger = logging.getLogger('')
 logger.setLevel(logging.DEBUG)
@@ -25,6 +25,15 @@ debug_stream_logger.setFormatter(logging.Formatter(
 logger.addHandler(debug_stream_logger)
 
 
-# logging
+# logging.basicConfig('logs/debug.log', filemode='a')
 
-logging.basicConfig('logs/debug.log', filemode='a')
+""" -------------------- File Extentions -------------------- """
+# EXTENTIONS = [
+#     'txt', 'todo', 'fixme', 'chert',
+#     'py', 'html', 'php', 'js', 'jsx', 'ts', 'tsx'
+#     ]
+
+EXTENTIONS = ['txt', 'todo', 'log']
+
+""" -------------------- OS DETECTION -------------------- """
+OS = sys.platform
