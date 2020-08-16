@@ -40,6 +40,37 @@ def SearchFile(path):
                           a = file.readline()
                           print(a)
 
+
+def get_files(path, hidden_folders = False, json = False, dictionary = False): # maybe add hidden_files
+    file_list = os.listdir(path)
+    all_files = list()
+    for entry in file_list:
+        full_path = os.path.join(path, entry)
+        if os.path.isdir(full_path):
+            if entry[0] != '.':
+                all_files += get_files(full_path)
+        else:
+            all_files.append(full_path)
+    if json or dictionary:
+        # convert the list to a dict {'dirpath': 'filename'}
+        return list_to_dict(all_files)
+    else:
+        return all_files
+
+
+def list_to_dict(array):
+    dictionary = dict()
+    for item in array:
+        if 'win' in  OS:
+            value = item.split('\\')[-1]  # file name
+        else:
+            value = item.split('/')[-1]  # file name
+        key = item[:-len(value)]   # file path
+        dictionary[key] = value
+        print('key: ', key)
+        print('value: ', value)
+    return dictionary
+
 path = 'G:\\projects\\Python\\ReDeeps\\datasets'
 SearchFile(path)
 
