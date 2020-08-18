@@ -32,16 +32,19 @@ def ext(file_name):
 
 
 # Search file in linux and windowns
-def SearchFile(path):
-    for dir_path, dir_names, file_names in os.walk(path):
-        for file_name in file_names:    
-                if ext(file_name) in EXTENTIONS:
-                     with open(file_name, 'r') as file:
-                          a = file.readline()
-                          print(a)
+# def SearchFile(path):
+#     for dir_path, dir_names, file_names in os.walk(path):
+#         for file_name in file_names:    
+#                 if ext(file_name) in EXTENTIONS:
+#                      with open(file_name, 'r') as file:
+#                           a = file.readline()
+#                           print(a)
 
 
-def get_files(path, hidden_folders = False, json = False, dictionary = False): # maybe add hidden_files
+
+
+
+def get_files(path,*, hidden_folders = False, json = False, dictionary = False): # maybe add hidden_files
     file_list = os.listdir(path)
     all_files = list()
     for entry in file_list:
@@ -71,9 +74,7 @@ def list_to_dict(array):
         print('value: ', value)
     return dictionary
 
-path = 'G:\\projects\\Python\\ReDeeps\\datasets'
-SearchFile(path)
 
 
 
-# extention = lambda file_name : file_name.split('.')[-1]
+

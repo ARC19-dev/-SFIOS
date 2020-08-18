@@ -11,34 +11,34 @@ tlogger = test_logger
 #             filtered += file
 #     return filtered
 
-def get_files(path, hidden_folders = False, json = False, dictionary = False): # maybe add hidden_files
-    file_list = os.listdir(path)
-    all_files = list()
-    for entry in file_list:
-        full_path = os.path.join(path, entry)
-        if os.path.isdir(full_path):
-            if entry[0] != '.':
-                all_files += get_files(full_path)
-        else:
-            all_files.append(full_path)
-    if json or dictionary:
-        # convert the list to a dict {'dirpath': 'filename'}
-        return list_to_dict(all_files)
-    else:
-        return all_files
+# def get_files(path, hidden_folders = False, json = False, dictionary = False): # maybe add hidden_files
+#     file_list = os.listdir(path)
+#     all_files = list()
+#     for entry in file_list:
+#         full_path = os.path.join(path, entry)
+#         if os.path.isdir(full_path):
+#             if entry[0] != '.':
+#                 all_files += get_files(full_path)
+#         else:
+#             all_files.append(full_path)
+#     if json or dictionary:
+#         # convert the list to a dict {'dirpath': 'filename'}
+#         return list_to_dict(all_files)
+#     else:
+#         return all_files
 
-def list_to_dict(array):
-    dictionary = dict()
-    for item in array:
-        if 'win' in  OS:
-            value = item.split('\\')[-1]  # file name
-        else:
-            value = item.split('/')[-1]  # file name
-        key = item[:-len(value)]   # file path
-        dictionary[key] = value
-        print('key: ', key)
-        print('value: ', value)
-    return dictionary
+# def list_to_dict(array):
+#     dictionary = dict()
+#     for item in array:
+#         if 'win' in  OS:
+#             value = item.split('\\')[-1]  # file name
+#         else:
+#             value = item.split('/')[-1]  # file name
+#         key = item[:-len(value)]   # file path
+#         dictionary[key] = value
+#         print('key: ', key)
+#         print('value: ', value)
+#     return dictionary
 
 
 # def get_files(path, hidden_folders = False):
@@ -54,6 +54,10 @@ def list_to_dict(array):
 #             files += [os.path.join(dirpath, file) for file in filenames]
 #     return files
 
+def extract(str, patter):
+    pass
+
+def 
 
 print('\n\n\n')
 print('--------------- START ---------------')
@@ -63,7 +67,27 @@ print('--------------- START ---------------')
 # print(get_files('..'))
 # print(list_to_dict(['C:/apps/fuck/test.txt', 'D:/video/help.mkv'])) # linux
 # print(list_to_dict(['C:\\apps\\fuck\\test.txt', 'D:\\video\\help.mkv'])) # win
-print(get_files('..', json=True))
+# print(get_files('..', json=True))
+files = [
+    '..\\.gitignore', 
+    '..\\App\\config.py', 
+    '..\\App\\core.py', 
+    '..\\App\\logs\\debug.log', 
+    '..\\App\\main.py', 
+    '..\\App\\test.py', 
+    '..\\App\\__pycache__\\config.cpython-38.pyc', 
+    '..\\datasets\\file-01.txt', 
+    '..\\datasets\\file-02.txt', 
+    '..\\datasets\\file-03.txt', 
+    '..\\datasets\\pattern-detection.txt', 
+    '..\\datasets\\todo-01.txt', 
+    '..\\datasets\\todo-02.txt', 
+    '..\\LICENSE', 
+    '..\\README.md'
+]
+
+
+
 print('\n\n')
 
 # os.uname()[0] or sys.platform
@@ -96,4 +120,11 @@ print('\n\n')
 # todo: don't enter hidden folders (optional by user)
 # todo: don't enter drive "C" except some special folders like documents or desktop etc.
 # todo: indexing found files and folders (as aref saied)
+
+# todo: open found files
+# todo: search inside opened files
+# todo: search for patterns
+# todo: extract found pattern
+
+
 # google: how to search fast in files using python
