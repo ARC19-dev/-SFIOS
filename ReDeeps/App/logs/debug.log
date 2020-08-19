@@ -1,0 +1,14 @@
+2020-08-16 19:32:09,072-DEBUG-Test.Core : entered: list_to_dic(['C:/apps/fuck/test.txt', 'D:/video/help.mkv']) {test.py > list_to_dict > 31}
+2020-08-16 19:32:09,073-DEBUG-Test.Core : dictionary set {test.py > list_to_dict > 33}
+2020-08-16 19:32:09,073-DEBUG-Test.Core : item is C:/apps/fuck/test.txt {test.py > list_to_dict > 35}
+2020-08-16 19:33:37,846-DEBUG-Test.Core : entered: list_to_dic(['C:/apps/fuck/test.txt', 'D:/video/help.mkv']) {test.py > list_to_dict > 31}
+2020-08-16 19:33:37,846-DEBUG-Test.Core : dictionary set {test.py > list_to_dict > 33}
+2020-08-16 19:33:37,846-DEBUG-Test.Core : item is C:/apps/fuck/test.txt {test.py > list_to_dict > 35}
+2020-08-16 19:33:37,847-DEBUG-Test.Core : item is D:/video/help.mkv {test.py > list_to_dict > 35}
+2020-08-16 19:34:19,723-DEBUG-Test.Core : entered: list_to_dic(['C:/apps/fuck/test.txt', 'D:/video/help.mkv']) {test.py > list_to_dict > 31}
+2020-08-16 19:34:19,723-DEBUG-Test.Core : dictionary set {test.py > list_to_dict > 33}
+2020-08-16 19:34:19,723-DEBUG-Test.Core : item is C:/apps/fuck/test.txt {test.py > list_to_dict > 35}
+2020-08-16 19:34:38,395-DEBUG-Test.Core : entered: list_to_dic(['C:/apps/fuck/test.txt', 'D:/video/help.mkv']) {test.py > list_to_dict > 31}
+2020-08-16 19:34:38,395-DEBUG-Test.Core : dictionary set {test.py > list_to_dict > 33}
+2020-08-16 19:34:38,395-DEBUG-Test.Core : item is C:/apps/fuck/test.txt {test.py > list_to_dict > 35}
+2020-08-16 19:34:38,396-DEBUG-Test.Core : item is D:/video/help.mkv {test.py > list_to_dict > 35}
