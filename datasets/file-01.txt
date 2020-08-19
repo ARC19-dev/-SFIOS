@@ -6,3 +6,5 @@ scholl is opened and I can go to school
 lorem ipsum dolor is amet fuck ... 
 
 todo: open the door 
+
+idea: detect the time and date maybe

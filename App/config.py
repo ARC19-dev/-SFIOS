@@ -1,4 +1,4 @@
-import logging, sys, os
+import logging, sys, os, re
 
 """ -------------------- LOGGING & LOGGERS -------------------- """
 
@@ -16,6 +16,16 @@ debug_file_logger.setFormatter(logging.Formatter(
                                 ' %(funcName)s >'
                                 ' %(lineno)d}'))
 logger.addHandler(debug_file_logger)
+
+debug_file_logger_1 = logging.FileHandler(
+    filename='logs/debug.txt', encoding='utf8')
+debug_file_logger_1.setLevel(logging.DEBUG)
+debug_file_logger_1.setFormatter(logging.Formatter(
+                                logger_format +
+                                ' {%(filename)s >'
+                                ' %(funcName)s >'
+                                ' %(lineno)d}'))
+logger.addHandler(debug_file_logger_1)
 
 debug_stream_logger = logging.StreamHandler()
 debug_stream_logger.setLevel(logging.INFO)
@@ -40,3 +50,7 @@ OS = sys.platform
 
 
 """ -------------------- PATTERNS -------------------- """
+PATTERNS = [
+    'todo:(.*)',
+    'fixme:(.*)'
+    ]

@@ -1,25 +1,3 @@
-2020-08-16 19:32:09,072-DEBUG-Test.Core : entered: list_to_dic(['C:/apps/fuck/test.txt', 'D:/video/help.mkv']) {test.py > list_to_dict > 31}
-2020-08-16 19:32:09,073-DEBUG-Test.Core : dictionary set {test.py > list_to_dict > 33}
-2020-08-16 19:32:09,073-DEBUG-Test.Core : item is C:/apps/fuck/test.txt {test.py > list_to_dict > 35}
-2020-08-16 19:33:37,846-DEBUG-Test.Core : entered: list_to_dic(['C:/apps/fuck/test.txt', 'D:/video/help.mkv']) {test.py > list_to_dict > 31}
-2020-08-16 19:33:37,846-DEBUG-Test.Core : dictionary set {test.py > list_to_dict > 33}
-2020-08-16 19:33:37,846-DEBUG-Test.Core : item is C:/apps/fuck/test.txt {test.py > list_to_dict > 35}
-2020-08-16 19:33:37,847-DEBUG-Test.Core : item is D:/video/help.mkv {test.py > list_to_dict > 35}
-2020-08-16 19:34:19,723-DEBUG-Test.Core : entered: list_to_dic(['C:/apps/fuck/test.txt', 'D:/video/help.mkv']) {test.py > list_to_dict > 31}
-2020-08-16 19:34:19,723-DEBUG-Test.Core : dictionary set {test.py > list_to_dict > 33}
-2020-08-16 19:34:19,723-DEBUG-Test.Core : item is C:/apps/fuck/test.txt {test.py > list_to_dict > 35}
-2020-08-16 19:34:38,395-DEBUG-Test.Core : entered: list_to_dic(['C:/apps/fuck/test.txt', 'D:/video/help.mkv']) {test.py > list_to_dict > 31}
-2020-08-16 19:34:38,395-DEBUG-Test.Core : dictionary set {test.py > list_to_dict > 33}
-2020-08-16 19:34:38,395-DEBUG-Test.Core : item is C:/apps/fuck/test.txt {test.py > list_to_dict > 35}
-2020-08-16 19:34:38,396-DEBUG-Test.Core : item is D:/video/help.mkv {test.py > list_to_dict > 35}
-2020-08-19 22:01:55,918-INFO -Core     : ----- STARTING ----- {core.py > main > 94}
-2020-08-19 22:01:55,919-DEBUG-Core     : Debugging started {core.py > main > 95}
-2020-08-19 22:02:29,859-INFO -Core     : ----- STARTING ----- {core.py > main > 94}
-2020-08-19 22:02:29,861-DEBUG-Core     : Debugging started {core.py > main > 95}
-2020-08-19 22:02:51,220-INFO -Core     : ----- STARTING ----- {core.py > main > 94}
-2020-08-19 22:02:51,220-DEBUG-Core     : Debugging started {core.py > main > 95}
-2020-08-19 22:02:56,468-INFO -Core     : ----- STARTING ----- {core.py > main > 94}
-2020-08-19 22:02:56,469-DEBUG-Core     : Debugging started {core.py > main > 95}
 2020-08-19 22:05:40,748-INFO -Core     : ----- STARTING ----- {core.py > main > 94}
 2020-08-19 22:05:40,750-DEBUG-Core     : Debugging started {core.py > main > 95}
 2020-08-19 22:07:20,872-INFO -Core     : ----- STARTING ----- {core.py > main > 94}

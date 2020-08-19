@@ -1,6 +1,10 @@
 # IN THE NAME OF GOD
 from config import *
 
+""" -------------------- LOGGER -------------------- """
+core_logger = logging.getLogger('Core')
+cl = core_logger
+
 
 """ -------------------- FUNCTIONS -------------------- """
 def ext(file_name):
@@ -32,19 +36,33 @@ def ext(file_name):
 
 
 # Search file in linux and windowns
-# def SearchFile(path):
-#     for dir_path, dir_names, file_names in os.walk(path):
-#         for file_name in file_names:    
-#                 if ext(file_name) in EXTENTIONS:
-#                      with open(file_name, 'r') as file:
-#                           a = file.readline()
-#                           print(a)
 
 
 
+def search(lines, *, patters = PATTERNS):
+    for line in lines:
+        for pattern in patterns:
+            match = re.search(pattern, line)
+            return match.group(0)
 
 
-def get_files(path,*, hidden_folders = False, json = False, dictionary = False): # maybe add hidden_files
+def get_lines(files):
+    cl.debug(type(files))
+    extracted = []
+    if type(files) is list:
+        cl.debug('list detected')
+        for file in files:
+            with open(file, 'r') as File:
+               extracted.append(File.readlines())
+    else:
+        cl.debug('dict detected')
+        for key, value in files.items():
+            with open(value, 'r') as File:
+               extracted.append(File.readlines())
+    return extracted
+
+
+def get_files(path: str,*, hidden_folders = False, json = False, dictionary = False): # maybe add hidden_files
     file_list = os.listdir(path)
     all_files = list()
     for entry in file_list:
@@ -75,6 +93,10 @@ def list_to_dict(array):
     return dictionary
 
 
+def main():
+    cl.info('----- STARTING -----')
+    cl.debug('Debugging started')
+    search(get_lines(get_files('.')))
 
-
-
+if __name__ == '__main__':
+    main()

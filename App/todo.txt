@@ -7,8 +7,6 @@ todo: indexing found files and folders (as aref saied)
 todo: open found files
 todo: search inside opened files
 todo: search for patterns
-todo: extract found pattern
-
-todo: ...
+todo: extract found pattern in a list
 
 google: how to search fast in files using python
