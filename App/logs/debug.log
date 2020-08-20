@@ -1,49 +1,19 @@
-2020-08-16 19:32:09,072-DEBUG-Test.Core : entered: list_to_dic(['C:/apps/fuck/test.txt', 'D:/video/help.mkv']) {test.py > list_to_dict > 31}
-2020-08-16 19:32:09,073-DEBUG-Test.Core : dictionary set {test.py > list_to_dict > 33}
-2020-08-16 19:32:09,073-DEBUG-Test.Core : item is C:/apps/fuck/test.txt {test.py > list_to_dict > 35}
-2020-08-16 19:33:37,846-DEBUG-Test.Core : entered: list_to_dic(['C:/apps/fuck/test.txt', 'D:/video/help.mkv']) {test.py > list_to_dict > 31}
-2020-08-16 19:33:37,846-DEBUG-Test.Core : dictionary set {test.py > list_to_dict > 33}
-2020-08-16 19:33:37,846-DEBUG-Test.Core : item is C:/apps/fuck/test.txt {test.py > list_to_dict > 35}
-2020-08-16 19:33:37,847-DEBUG-Test.Core : item is D:/video/help.mkv {test.py > list_to_dict > 35}
-2020-08-16 19:34:19,723-DEBUG-Test.Core : entered: list_to_dic(['C:/apps/fuck/test.txt', 'D:/video/help.mkv']) {test.py > list_to_dict > 31}
-2020-08-16 19:34:19,723-DEBUG-Test.Core : dictionary set {test.py > list_to_dict > 33}
-2020-08-16 19:34:19,723-DEBUG-Test.Core : item is C:/apps/fuck/test.txt {test.py > list_to_dict > 35}
-2020-08-16 19:34:38,395-DEBUG-Test.Core : entered: list_to_dic(['C:/apps/fuck/test.txt', 'D:/video/help.mkv']) {test.py > list_to_dict > 31}
-2020-08-16 19:34:38,395-DEBUG-Test.Core : dictionary set {test.py > list_to_dict > 33}
-2020-08-16 19:34:38,395-DEBUG-Test.Core : item is C:/apps/fuck/test.txt {test.py > list_to_dict > 35}
-2020-08-16 19:34:38,396-DEBUG-Test.Core : item is D:/video/help.mkv {test.py > list_to_dict > 35}
-2020-08-19 22:01:55,918-INFO -Core     : ----- STARTING ----- {core.py > main > 94}
-2020-08-19 22:01:55,919-DEBUG-Core     : Debugging started {core.py > main > 95}
-2020-08-19 22:02:29,859-INFO -Core     : ----- STARTING ----- {core.py > main > 94}
-2020-08-19 22:02:29,861-DEBUG-Core     : Debugging started {core.py > main > 95}
-2020-08-19 22:02:51,220-INFO -Core     : ----- STARTING ----- {core.py > main > 94}
-2020-08-19 22:02:51,220-DEBUG-Core     : Debugging started {core.py > main > 95}
-2020-08-19 22:02:56,468-INFO -Core     : ----- STARTING ----- {core.py > main > 94}
-2020-08-19 22:02:56,469-DEBUG-Core     : Debugging started {core.py > main > 95}
-2020-08-19 22:05:40,748-INFO -Core     : ----- STARTING ----- {core.py > main > 94}
-2020-08-19 22:05:40,750-DEBUG-Core     : Debugging started {core.py > main > 95}
-2020-08-19 22:07:20,872-INFO -Core     : ----- STARTING ----- {core.py > main > 94}
-2020-08-19 22:07:20,873-DEBUG-Core     : Debugging started {core.py > main > 95}
-2020-08-19 22:07:52,139-INFO -Core     : ----- STARTING ----- {core.py > main > 95}
-2020-08-19 22:07:52,140-DEBUG-Core     : Debugging started {core.py > main > 96}
-2020-08-19 22:07:52,174-DEBUG-Core     : <class 'dict'> {core.py > get_lines > 50}
-2020-08-19 22:10:07,886-INFO -Core     : ----- STARTING ----- {core.py > main > 97}
-2020-08-19 22:10:07,887-DEBUG-Core     : Debugging started {core.py > main > 98}
-2020-08-19 22:10:07,903-DEBUG-Core     : <class 'dict'> {core.py > get_lines > 50}
-2020-08-19 22:10:07,903-DEBUG-Core     : dict detected {core.py > get_lines > 58}
-2020-08-19 22:11:25,874-INFO -Core     : ----- STARTING ----- {core.py > main > 97}
-2020-08-19 22:11:25,875-DEBUG-Core     : Debugging started {core.py > main > 98}
-2020-08-19 22:11:25,878-DEBUG-Core     : <class 'list'> {core.py > get_lines > 50}
-2020-08-19 22:11:25,879-DEBUG-Core     : dict detected {core.py > get_lines > 58}
-2020-08-19 22:15:27,479-INFO -Core     : ----- STARTING ----- {core.py > main > 97}
-2020-08-19 22:15:27,483-DEBUG-Core     : Debugging started {core.py > main > 98}
-2020-08-19 22:15:27,488-DEBUG-Core     : <class 'list'> {core.py > get_lines > 50}
-2020-08-19 22:15:27,488-DEBUG-Core     : list detected {core.py > get_lines > 53}
-2020-08-19 22:16:31,733-INFO -Core     : ----- STARTING ----- {core.py > main > 97}
-2020-08-19 22:16:31,734-DEBUG-Core     : Debugging started {core.py > main > 98}
-2020-08-19 22:16:31,737-DEBUG-Core     : <class 'list'> {core.py > get_lines > 50}
-2020-08-19 22:16:31,737-DEBUG-Core     : list detected {core.py > get_lines > 53}
-2020-08-19 22:17:56,521-INFO -Core     : ----- STARTING ----- {core.py > main > 97}
-2020-08-19 22:17:56,522-DEBUG-Core     : Debugging started {core.py > main > 98}
-2020-08-19 22:17:56,525-DEBUG-Core     : <class 'list'> {core.py > get_lines > 50}
-2020-08-19 22:17:56,525-DEBUG-Core     : list detected {core.py > get_lines > 53}
+2020-08-20 19:06:02,577-INFO -Core     : ----- STARTING ----- {core.py > main > 116}
+2020-08-20 19:06:02,578-DEBUG-Core     : Debugging started {core.py > main > 117}
+2020-08-20 19:06:02,578-DEBUG-Core     : get_files(.) {core.py > get_files > 79}
+2020-08-20 19:06:02,578-DEBUG-Core     : get_files(.\data) {core.py > get_files > 79}
+2020-08-20 19:06:02,579-DEBUG-Core     : [] {core.py > get_files > 97}
+2020-08-20 19:06:02,579-DEBUG-Core     : get_files(.\logs) {core.py > get_files > 79}
+2020-08-20 19:06:02,593-DEBUG-Core     : ['.\\logs\\debug.log', '.\\logs\\debug.txt', '.\\logs\\info.txt'] {core.py > get_files > 97}
+2020-08-20 19:06:02,594-DEBUG-Core     : get_files(.\VideoCapture) {core.py > get_files > 79}
+2020-08-20 19:06:02,595-DEBUG-Core     : ['.\\VideoCapture\\face.py', '.\\VideoCapture\\haarcascade_eye.xml', '.\\VideoCapture\\haarcascade_frontalface_default.xml'] {core.py > get_files > 97}
+2020-08-20 19:06:02,595-DEBUG-Core     : get_files(.\__pycache__) {core.py > get_files > 79}
+2020-08-20 19:06:02,596-DEBUG-Core     : Binary file:  .\__pycache__\config.cpython-38.pyc {core.py > get_files > 90}
+2020-08-20 19:06:02,597-DEBUG-Core     : [] {core.py > get_files > 97}
+2020-08-20 19:06:02,597-DEBUG-Core     : ['.\\config.py', '.\\core.py', '.\\logs\\debug.log', '.\\logs\\debug.txt', '.\\logs\\info.txt', '.\\main.py', '.\\temp.py', '.\\test.py', '.\\todo.txt', '.\\VideoCapture\\face.py', '.\\VideoCapture\\haarcascade_eye.xml', '.\\VideoCapture\\haarcascade_frontalface_default.xml'] {core.py > get_files > 97}
+2020-08-20 19:06:02,597-DEBUG-Core     : FILES: ['.\\config.py', '.\\core.py', '.\\logs\\debug.log', '.\\logs\\debug.txt', '.\\logs\\info.txt', '.\\main.py', '.\\temp.py', '.\\test.py', '.\\todo.txt', '.\\VideoCapture\\face.py', '.\\VideoCapture\\haarcascade_eye.xml', '.\\VideoCapture\\haarcascade_frontalface_default.xml'] {core.py > get_lines > 62}
+2020-08-20 19:06:02,597-DEBUG-Core     : <class 'list'> {core.py > get_lines > 63}
+2020-08-20 19:06:02,597-DEBUG-Core     : list detected {core.py > get_lines > 66}
+2020-08-20 19:06:02,617-DEBUG-Core     : STARTING THE SEARCH  {core.py > search > 45}
+2020-08-20 19:06:02,617-DEBUG-Core     : entering line:  {core.py > search > 51}
+2020-08-20 19:06:02,617-DEBUG-Core     : checking pattern: todo:(.*) {core.py > search > 53}

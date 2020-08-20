@@ -1,0 +1,1 @@
+2020-08-20 19:06:02,577-INFO -Core     : ----- STARTING ----- {core.py > main > 116}
