@@ -63,15 +63,6 @@ def search(lines, *, patters = PATTERNS):
             match = re.search(pattern, line)
             return match.group(0)
 
-'''
-
-get_lines = search(get_lines)   or    @search
-                                      def get_lines()
-
-                    return obj = get_lines
-'''
-
-# @search
 def get_lines(func):
     files = func()
     extracted = []
@@ -85,7 +76,7 @@ def get_lines(func):
                extracted.append(File.readlines())
     return extracted
 
-# @get_lines
+
 def get_files(path = input_value, hidden_folders = False, json = False, dictionary = False): # maybe add hidden_files
     file_list = os.listdir(path)
     all_files = list()
