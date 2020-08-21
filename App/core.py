@@ -42,25 +42,23 @@ is_binary_string = lambda bytes: bool(bytes.translate(None, textchars))
 # Search file in linux and windowns
 
 def search(lines, *, patterns=PATTERNS):
-    cl.debug('STARTING THE SEARCH ')
     matches = []
     count = 0
     for line in lines:
         if count >= 5:
             return matches
-        cl.debug('entering line: ')
         for pattern in patterns:
-            cl.debug('checking pattern: %s' % pattern)
-            match = re.search(pattern, line)
-            cl.debug('match.group(0) = %s' % match.group(0))
-            cl.debug(match)
-            matches.append(match.group(0))
+            # match = re.split(pattern, line)
+            match = re.search(pattern, str(line))
+            if match:
+                matches.append(match.group(0))
         count += 1
     return matches
 
+
 def get_lines(files):  
-    cl.debug('FILES: %s' % files)
-    cl.debug(type(files))
+    # cl.debug('FILES: %s' % files)
+    # cl.debug(type(files))
     extracted = []
     if type(files) is list:
         cl.debug('list detected')
@@ -115,7 +113,11 @@ def list_to_dict(array):
 def main():
     cl.info('----- STARTING -----')
     cl.debug('Debugging started')
-    print(search(get_lines(get_files('.'))))
+    matches = search(get_lines(get_files('.')))
+    cl.info('----- LINES ARRAY -----')
+    for m in matches:
+        cl.info(m)# 
+        # cl.info(match)
 
 
 if __name__ == '__main__':
