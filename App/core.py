@@ -41,20 +41,27 @@ is_binary_string = lambda bytes: bool(bytes.translate(None, textchars))
 
 # Search file in linux and windowns
 
-def search(lines, *, patterns=PATTERNS):
-    matches = []
-    count = 0
-    for line in lines:
-        if count >= 5:
-            return matches
-        for pattern in patterns:
+# def search(lines, *, patterns=PATTERNS):
+    # matches = []
+    # count = 0
+    # for line in lines:
+        # if count >= 5:
+            # return matches
+        # for pattern in patterns:
             # match = re.split(pattern, line)
-            match = re.search(pattern, str(line))
-            if match:
-                matches.append(match.group(0))
-        count += 1
-    return matches
+            # match = re.search(pattern, str(line))
+            # if match:
+                # matches.append(match.group(0))
+        # count += 1
+    # return matches
 
+# fight
+def search(files):
+    for file in files:
+        for line in file:
+            m = re.findall('todo:(.*)', line)
+    return m
+        
 
 def get_lines(files):  
     # cl.debug('FILES: %s' % files)
@@ -113,11 +120,7 @@ def list_to_dict(array):
 def main():
     cl.info('----- STARTING -----')
     cl.debug('Debugging started')
-    matches = search(get_lines(get_files('.')))
-    cl.info('----- LINES ARRAY -----')
-    for m in matches:
-        cl.info(m)# 
-        # cl.info(match)
+    lines = get_lines(get_files('..\\datasets'))
 
 
 if __name__ == '__main__':

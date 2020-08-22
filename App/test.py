@@ -57,11 +57,13 @@ tlogger = test_logger
 def extract(str, patter):
     pass
 
-def search(lines, *, patters = PATTERNS):
+
+def search(lines, *, patters=PATTERNS):
     for line in lines():
         for pattern in patterns:
             match = re.search(pattern, line)
             return match.group(0)
+
 
 def get_lines(func):
     files = func()
@@ -69,15 +71,15 @@ def get_lines(func):
     if files is list():
         for file in files:
             with open(file, 'r') as File:
-               extracted.append(File.readlines())
+                extracted.append(File.readlines())
     else:
         for key, value in files:
             with open(value, 'r') as File:
-               extracted.append(File.readlines())
+                extracted.append(File.readlines())
     return extracted
 
 
-def get_files(path = input_value, hidden_folders = False, json = False, dictionary = False): # maybe add hidden_files
+def get_files(path=input_value, hidden_folders=False, json=False, dictionary=False):  # maybe add hidden_files
     file_list = os.listdir(path)
     all_files = list()
     for entry in file_list:
@@ -97,7 +99,7 @@ def get_files(path = input_value, hidden_folders = False, json = False, dictiona
 def list_to_dict(array):
     dictionary = dict()
     for item in array:
-        if 'win' in  OS:
+        if 'win' in OS:
             value = item.split('\\')[-1]  # file name
         else:
             value = item.split('/')[-1]  # file name
@@ -120,24 +122,22 @@ print('--------------- START ---------------')
 input_value = '..'
 print(search())
 files = [
-    '..\\.gitignore', 
-    '..\\App\\config.py', 
-    '..\\App\\core.py', 
-    '..\\App\\logs\\debug.log', 
-    '..\\App\\main.py', 
-    '..\\App\\test.py', 
-    '..\\App\\__pycache__\\config.cpython-38.pyc', 
-    '..\\datasets\\file-01.txt', 
-    '..\\datasets\\file-02.txt', 
-    '..\\datasets\\file-03.txt', 
-    '..\\datasets\\pattern-detection.txt', 
-    '..\\datasets\\todo-01.txt', 
-    '..\\datasets\\todo-02.txt', 
-    '..\\LICENSE', 
+    '..\\.gitignore',
+    '..\\App\\config.py',
+    '..\\App\\core.py',
+    '..\\App\\logs\\debug.log',
+    '..\\App\\main.py',
+    '..\\App\\test.py',
+    '..\\App\\__pycache__\\config.cpython-38.pyc',
+    '..\\datasets\\file-01.txt',
+    '..\\datasets\\file-02.txt',
+    '..\\datasets\\file-03.txt',
+    '..\\datasets\\pattern-detection.txt',
+    '..\\datasets\\todo-01.txt',
+    '..\\datasets\\todo-02.txt',
+    '..\\LICENSE',
     '..\\README.md'
 ]
-
-
 
 
 print('\n\n')
@@ -166,7 +166,6 @@ print('\n\n')
 # fillter = extract_file_names()
 
 
-
 # todo: complete the search engine (or the search core)
 # todo: don't enter folders starting with (.)
 # todo: don't enter hidden folders (optional by user)
@@ -181,3 +180,16 @@ print('\n\n')
 
 # google: how to search fast in files using python
 fuck = 'http://localhost:8888/tree'
+
+[
+    'Hi my name is kambiz\n',
+    '\n',
+    "today is 2020-08-10 and I'm so glad that my\n",
+    'scholl is opened and I can go to school\n',
+    '\n',
+    'lorem ipsum dolor is amet fuck ... \n',
+    '\n',
+    'todo: open the door \n',
+    '\n',
+    'idea: detect the time and date maybe'
+]
