@@ -1,0 +1,2 @@
+2020-08-22 14:33:07,060-INFO -Core     : ----- STARTING ----- {core.py > main > 131}
+2020-08-22 14:33:07,064-INFO -Core     : [[('todo', ' open the door ')], [('idea', ' detect the time and date maybe')], [('todo', ' something to do.')], [('todo', ' learn AI')], [('todo', ' Deep Learning')], [('fixme', " this function doesn't work")], [('fixme', ' The code is too large')], [('todo', '')], [('done', '')]] {core.py > main > 135}

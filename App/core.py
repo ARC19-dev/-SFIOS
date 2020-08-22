@@ -12,8 +12,13 @@ cl = core_logger
 def ext(file_name):
     return file_name.split('.')[-1]
 
-textchars = bytearray({7,8,9,10,12,13,27} | set(range(0x20, 0x100)) - {0x7f})
-is_binary_string = lambda bytes: bool(bytes.translate(None, textchars))
+
+textchars = bytearray({7, 8, 9, 10, 12, 13, 27} |
+                      set(range(0x20, 0x100)) - {0x7f})
+
+
+def is_binary_string(bytes): return bool(bytes.translate(None, textchars))
+
 
 """ -------------------- PROCCESS -------------------- """
 # get OS
@@ -42,28 +47,32 @@ is_binary_string = lambda bytes: bool(bytes.translate(None, textchars))
 # Search file in linux and windowns
 
 # def search(lines, *, patterns=PATTERNS):
-    # matches = []
-    # count = 0
-    # for line in lines:
-        # if count >= 5:
-            # return matches
-        # for pattern in patterns:
-            # match = re.split(pattern, line)
-            # match = re.search(pattern, str(line))
-            # if match:
-                # matches.append(match.group(0))
-        # count += 1
-    # return matches
+# matches = []
+# count = 0
+# for line in lines:
+# if count >= 5:
+# return matches
+# for pattern in patterns:
+# match = re.split(pattern, line)
+# match = re.search(pattern, str(line))
+# if match:
+# matches.append(match.group(0))
+# count += 1
+# return matches
 
 # fight
-def search(files):
+def search(files, patterns=PATTERNS):
+    matches = []
     for file in files:
         for line in file:
-            m = re.findall('todo:(.*)', line)
-    return m
-        
+            for ptr in patterns:
+                match = re.findall(ptr, line)
+                if match:
+                    matches.append(match)
+    return matches
 
-def get_lines(files):  
+
+def get_lines(files):
     # cl.debug('FILES: %s' % files)
     # cl.debug(type(files))
     extracted = []
@@ -92,11 +101,12 @@ def get_files(path: str, *, hidden_folders=False, json=False, dictionary=False):
         else:
             with open(full_path, 'rb') as f:
                 if (is_binary_string(f.read(128))):
-                    cl.debug('Binary file:  %s' %full_path)
+                    cl.debug('Binary file:  %s' % full_path)
                 else:
                     all_files.append(full_path)
-    if json or dictionary:  # convert the list to a dict {'dirpath': 'filename'}
-        cl.debug(all_files)  
+    # convert the list to a dict {'dirpath': 'filename'}
+    if json or dictionary:
+        cl.debug(all_files)
         return list_to_dict(all_files)
     else:
         cl.debug(all_files)
@@ -121,6 +131,8 @@ def main():
     cl.info('----- STARTING -----')
     cl.debug('Debugging started')
     lines = get_lines(get_files('..\\datasets'))
+    m = search(lines)
+    cl.info(m)
 
 
 if __name__ == '__main__':

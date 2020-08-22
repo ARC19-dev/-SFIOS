@@ -1,12 +1,19 @@
 todo: complete the search engine (or the search core)
-todo: don't enter folders starting with (.)
+Done >>> todo: don't enter folders starting with (.)
 todo: don't enter hidden folders (optional by user)
-todo: don't enter drive "C" except some special folders like documents or desktop etc.
+WTF >>> todo: don't enter drive "C" except some special folders like documents or desktop etc.
 todo: indexing found files and folders (as aref saied)
 
-todo: open found files
-todo: search inside opened files
-todo: search for patterns
-todo: extract found pattern in a list
+Done >>> todo: open found files
+Done >>> todo: search inside opened files
+Done >>> todo: search for patterns
+Done >>> todo: extract found pattern in a list
 
 google: how to search fast in files using python
+
+todo: detect those files which have ("todo") in their name
+todo: create a list in todo files (category : task)
+
+
+
+

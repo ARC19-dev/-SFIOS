@@ -1,0 +1,18 @@
+Personal: wash my hands
+Personal: personal task1
+Personal: personal task2
+Personal: personal task3
+
+Website: design base idea
+Website: implement section1
+Website: implement section2
+Website: implement section3
+Website: Security
+
+
+Business: fuck other businesses
+Business: Business task1
+Business: Business task2
+Business: Business task3
+Business: Business task4
+Business: Business task5

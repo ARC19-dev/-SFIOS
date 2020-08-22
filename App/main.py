@@ -8,14 +8,14 @@ class Window(QWidget):
         self.setUi()
 
     def setUi(self):
-        self.setGeometry(100,100,300,300)
+        self.setGeometry(100, 100, 300, 300)
         self.setWindowTitle("Hello")
-        
+
         # Line Edit
         self.line_1 = QLineEdit(self)
-        self.line_1.move(100,100)
+        self.line_1.move(100, 100)
         self.line_2 = QLineEdit(self)
-        self.line_2.move(100,120)
+        self.line_2.move(100, 120)
 
         # Label
         self.label_1 = QLabel("username", self)
@@ -24,10 +24,10 @@ class Window(QWidget):
         self.label_2.move(20, 120)
 
         self.button = QPushButton("submit", self)
-        self.button.move(100,150)
+        self.button.move(100, 150)
         self.button.clicked.connect(self.submit)
         self.show()
-        
+
     def submit(self):
         self.username = self.line_1.text()
         self.password = self.line_2.text()
@@ -46,5 +46,3 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Window()
     sys.exit(app.exec_())
-    
-    
