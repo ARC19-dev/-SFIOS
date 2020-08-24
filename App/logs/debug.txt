@@ -1,6 +1,6 @@
-2020-08-22 14:33:07,060-INFO -Core     : ----- STARTING ----- {core.py > main > 131}
-2020-08-22 14:33:07,060-DEBUG-Core     : Debugging started {core.py > main > 132}
-2020-08-22 14:33:07,061-DEBUG-Core     : get_files(..\datasets) {core.py > get_files > 93}
-2020-08-22 14:33:07,063-DEBUG-Core     : ['..\\datasets\\file-01.txt', '..\\datasets\\file-02.txt', '..\\datasets\\file-03.txt', '..\\datasets\\pattern-detection.txt', '..\\datasets\\todo-01.txt', '..\\datasets\\todo-02.txt', '..\\datasets\\todo-03.txt', '..\\datasets\\todo-04.txt'] {core.py > get_files > 112}
-2020-08-22 14:33:07,063-DEBUG-Core     : list detected {core.py > get_lines > 80}
-2020-08-22 14:33:07,064-INFO -Core     : [[('todo', ' open the door ')], [('idea', ' detect the time and date maybe')], [('todo', ' something to do.')], [('todo', ' learn AI')], [('todo', ' Deep Learning')], [('fixme', " this function doesn't work")], [('fixme', ' The code is too large')], [('todo', '')], [('done', '')]] {core.py > main > 135}
+2020-08-24 17:23:59,800-INFO -Core     : ----- STARTING ----- {core.py > main > 132}
+2020-08-24 17:23:59,800-DEBUG-Core     : Debugging started {core.py > main > 133}
+2020-08-24 17:23:59,800-DEBUG-Core     : get_files(..\datasets) {core.py > get_files > 91}
+2020-08-24 17:23:59,802-DEBUG-Core     : Plain Files: ['..\\datasets\\file-01.txt', '..\\datasets\\file-02.txt', '..\\datasets\\file-03.txt', '..\\datasets\\pattern-detection.txt']
+Todo Files: ['..\\datasets\\2020-08-28.todo', '..\\datasets\\todo-01.txt', '..\\datasets\\todo-02.txt', '..\\datasets\\todo-03.txt', '..\\datasets\\todo-04.txt'] {core.py > get_files > 112}
+2020-08-24 17:23:59,802-DEBUG-Core     : dict detected {core.py > get_text > 82}

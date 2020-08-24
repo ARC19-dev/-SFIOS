@@ -1,8 +1,5 @@
-import logging
-import sys
-import os
-import re
-import mimetypes
+import logging, sys, os, re, mimetypes
+from FileList import *
 
 """ -------------------- LOGGING & LOGGERS -------------------- """
 
@@ -61,6 +58,10 @@ EXTENTIONS = ['txt', 'todo', 'log']
 
 """ -------------------- OS DETECTION -------------------- """
 OS = sys.platform
+if 'win' in OS:
+    DIR_SEP = '\\'
+else:
+    DIR_SEP = '/'
 
 
 """ -------------------- PATTERNS -------------------- """
