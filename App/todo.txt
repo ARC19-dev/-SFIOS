@@ -13,6 +13,7 @@ google: how to search fast in files using python
 
 todo: detect those files which have ("todo") in their name
 todo: create a list in todo files (category : task)
+todo: detect time like >>> todo: create a database (30min) or (1:30:00)
 
 
 
